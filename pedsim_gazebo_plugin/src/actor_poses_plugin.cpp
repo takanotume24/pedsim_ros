@@ -54,28 +54,25 @@ public:
   {
     //              ROS_INFO ("OnRosMsg ... ");
     std::string model_name;
-    for (unsigned int mdl = 0; mdl < world_->ModelCount(); mdl++) {
-      physics::ModelPtr tmp_model;
-      tmp_model = world_->ModelByIndex(mdl);
+    for (auto& mdl : world_->Models()) {
       std::string frame_id;
-      frame_id = tmp_model->GetName();
-
-      for (uint actor = 0; actor < msg->agent_states.size(); actor++) {
-        if (frame_id == std::to_string(msg->agent_states[actor].id)) {
+      frame_id = mdl->GetName();
+      for (auto& agent_state : msg->agent_states) {
+        if (frame_id == std::to_string(agent_state.id)) {
           //                            ROS_INFO_STREAM("actor_id: "<<
           //                            std::to_string(
           //                            msg->tracks[actor].track_id) );
           ignition::math::Pose3d gzb_pose;
-          gzb_pose.Pos().Set(msg->agent_states[actor].pose.position.x,
-                             msg->agent_states[actor].pose.position.y,
-                             tmp_model->WorldPose().Pos().Z());
-          ROS_INFO("%f", tmp_model->WorldPose().Pos().Z());
-          gzb_pose.Rot().Set(msg->agent_states[actor].pose.orientation.w,
-                             msg->agent_states[actor].pose.orientation.x,
-                             msg->agent_states[actor].pose.orientation.y,
-                             msg->agent_states[actor].pose.orientation.z);
+          gzb_pose.Pos().Set(agent_state.pose.position.x,
+                             agent_state.pose.position.y,
+                             mdl->WorldPose().Pos().Z());
+          ROS_INFO("%f", mdl->WorldPose().Pos().Z());
+          gzb_pose.Rot().Set(agent_state.pose.orientation.w,
+                             agent_state.pose.orientation.x,
+                             agent_state.pose.orientation.y,
+                             agent_state.pose.orientation.z);
           try {
-            tmp_model->SetWorldPose(gzb_pose);
+            mdl->SetWorldPose(gzb_pose);
           } catch (gazebo::common::Exception gz_ex) {
             ROS_ERROR("Error setting pose %s - %s",
                       frame_id.c_str(),
