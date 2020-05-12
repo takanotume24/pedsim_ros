@@ -52,32 +52,29 @@ public:
   // call back function when receive rosmsg
   void OnRosMsg(const pedsim_msgs::AgentStatesConstPtr msg)
   {
-    //              ROS_INFO ("OnRosMsg ... ");
     std::string model_name;
     for (auto& mdl : world_->Models()) {
       std::string frame_id;
       frame_id = mdl->GetName();
       for (auto& agent_state : msg->agent_states) {
-        if (frame_id == std::to_string(agent_state.id)) {
-          //                            ROS_INFO_STREAM("actor_id: "<<
-          //                            std::to_string(
-          //                            msg->tracks[actor].track_id) );
-          ignition::math::Pose3d gzb_pose;
-          gzb_pose.Pos().Set(agent_state.pose.position.x,
-                             agent_state.pose.position.y,
-                             mdl->WorldPose().Pos().Z());
-          ROS_INFO("%f", mdl->WorldPose().Pos().Z());
-          gzb_pose.Rot().Set(agent_state.pose.orientation.w,
-                             agent_state.pose.orientation.x,
-                             agent_state.pose.orientation.y,
-                             agent_state.pose.orientation.z);
-          try {
-            mdl->SetWorldPose(gzb_pose);
-          } catch (gazebo::common::Exception gz_ex) {
-            ROS_ERROR("Error setting pose %s - %s",
-                      frame_id.c_str(),
-                      gz_ex.GetErrorStr().c_str());
-          }
+        if (frame_id != std::to_string(agent_state.id)) {
+          continue;
+        }
+        ignition::math::Pose3d gzb_pose;
+        gzb_pose.Pos().Set(agent_state.pose.position.x,
+                           agent_state.pose.position.y,
+                           mdl->WorldPose().Pos().Z());
+        ROS_INFO("%f", mdl->WorldPose().Pos().Z());
+        gzb_pose.Rot().Set(agent_state.pose.orientation.w,
+                           agent_state.pose.orientation.x,
+                           agent_state.pose.orientation.y,
+                           agent_state.pose.orientation.z);
+        try {
+          mdl->SetWorldPose(gzb_pose);
+        } catch (gazebo::common::Exception gz_ex) {
+          ROS_ERROR("Error setting pose %s - %s",
+                    frame_id.c_str(),
+                    gz_ex.GetErrorStr().c_str());
         }
       }
     }
