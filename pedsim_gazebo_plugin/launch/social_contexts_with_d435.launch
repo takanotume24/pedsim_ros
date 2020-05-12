@@ -16,7 +16,7 @@
     </include>
 
     <!-- this node spawn pedsim actors to gazebo once, then the plugin updates their pose -->
-    <!-- <node pkg="pedsim_gazebo_plugin" type="spawn_pedsim_agents.py" name="spawn_pedsim_agents" output="screen"></node> -->
+    <node pkg="pedsim_gazebo_plugin" type="spawn_pedsim_agents.py" name="spawn_pedsim_agents" output="screen"></node>
     <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">
         <remap from="image" to="/d435/depth/color/image_raw" />
     </node>
