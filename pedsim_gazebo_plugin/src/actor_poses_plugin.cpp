@@ -56,7 +56,8 @@ namespace gazebo
                             ignition::math::Pose3d gzb_pose;
                             gzb_pose.Pos().Set( msg->agent_states[actor].pose.position.x,
                                                 msg->agent_states[actor].pose.position.y,
-                                                msg->agent_states[actor].pose.position.z + MODEL_OFFSET);
+                                                tmp_model->WorldPose().Pos().Z());
+                            ROS_INFO("%f",tmp_model->WorldPose().Pos().Z());
                             gzb_pose.Rot().Set(msg->agent_states[actor].pose.orientation.w,
                                                msg->agent_states[actor].pose.orientation.x,
                                                msg->agent_states[actor].pose.orientation.y,
