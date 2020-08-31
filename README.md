@@ -1,3 +1,12 @@
+# 松永メモ
+Realsense D435付きturtlebot3にてシミュレーションを行う。
+柱が4本存在する環境。
+
+```
+$ git checkout add-turtlebot3-with-realsense
+$ roslaunch pedsim_gazebo_plugin social_contexts_with_d435.launch 
+```
+
 # Pedestrian Simulator
 <img src=https://github.com/srl-freiburg/pedsim_ros/blob/master/pedsim_simulator/images/crowd1.png width=400/> | <img src=https://github.com/srl-freiburg/pedsim_ros/blob/master/pedsim_simulator/images/costmap.png width=400/>
 
