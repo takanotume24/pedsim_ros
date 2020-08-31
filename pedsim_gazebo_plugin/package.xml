@@ -30,6 +30,7 @@
   <exec_depend>pedsim_msgs</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
   <depend>pedsim_utils</depend>
+  <depend>turtlebot3_navigation</depend>
 
   <export>
 
