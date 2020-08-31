@@ -17,6 +17,12 @@ find_package(catkin REQUIRED COMPONENTS
   pedsim_utils
 )
 
+find_package(gazebo REQUIRED)
+if(gazebo_VERSION_MAJOR GREATER 8)
+  ign_import_target(UUID)
+  message(STATUS "Applying patch to ${PROJECT_NAME} to avoid error with GZ9: Target UUID::UUID not found.")
+endif()
+
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
  find_package(gazebo REQUIRED )
