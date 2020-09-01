@@ -4,6 +4,7 @@
 //
 
 #include "ped_waypoint.h"
+
 #include "ped_agent.h"
 
 // initialize static variables

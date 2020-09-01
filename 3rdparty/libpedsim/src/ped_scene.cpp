@@ -4,14 +4,15 @@
 //
 
 #include "ped_scene.h"
-#include "ped_agent.h"
-#include "ped_obstacle.h"
-#include "ped_tree.h"
-#include "ped_waypoint.h"
 
 #include <algorithm>
 #include <cstddef>
 #include <stack>
+
+#include "ped_agent.h"
+#include "ped_obstacle.h"
+#include "ped_tree.h"
+#include "ped_waypoint.h"
 
 using namespace std;
 

@@ -93,5 +93,5 @@ class LIBEXPORT Tscene {
   void getNeighbors(std::vector<const Ped::Tagent*>& neighborList, double x,
                     double y, double dist) const;
 };
-}
+}  // namespace Ped
 #endif

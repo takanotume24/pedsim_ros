@@ -56,6 +56,6 @@ class LIBEXPORT Tobstacle {
   double by;  ///< Position of the obstacle
   int type;
 };
-}
+}  // namespace Ped
 
 #endif
