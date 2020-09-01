@@ -1,46 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 
-    <!-- this file is auto generated using pedsim_gazebo_plugin pkg -->    
-    <sdf version="1.5">
-      <world name="default">
-      
-      <!-- Ground Plane -->
-      
-      <include>
-        <uri>model://ground_plane</uri>
-      </include>
-    
-      <include>
-        <uri>model://sun</uri>
-      </include>
-    
-        
+<!-- this file is auto generated using pedsim_gazebo_plugin pkg -->
+<sdf version="1.5">
+  <world name="default">
 
-     <model name='grey_wall_1'>
+    <!-- Ground Plane -->
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+
+    <model name='grey_wall_1'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>75.0 0.0  1.4 0 0 0.0</pose>
-    
+
+        <pose frame=''>75.0 0.0  1.4 0 0 0.0</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 150.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 150.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -48,11 +47,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 150.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 150.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -66,33 +65,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_2'>
+
+    <model name='grey_wall_2'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>0.0 12.5  1.4 0 0 1.57</pose>
-    
+
+        <pose frame=''>0.0 12.5  1.4 0 0 1.57</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 25.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 25.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -100,11 +99,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 25.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 25.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -118,33 +117,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_3'>
+
+    <model name='grey_wall_3'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>150.0 12.5  1.4 0 0 1.57</pose>
-    
+
+        <pose frame=''>150.0 12.5  1.4 0 0 1.57</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 25.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 25.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -152,11 +151,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 25.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 25.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -170,33 +169,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_4'>
+
+    <model name='grey_wall_4'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>2.5 27.5  1.4 0 0 0.785398163397</pose>
-    
+
+        <pose frame=''>2.5 27.5  1.4 0 0 0.785398163397</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -204,11 +203,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -222,33 +221,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_5'>
+
+    <model name='grey_wall_5'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>147.5 27.5  1.4 0 0 -0.785398163397</pose>
-    
+
+        <pose frame=''>147.5 27.5  1.4 0 0 -0.785398163397</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -256,11 +255,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -274,33 +273,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_6'>
+
+    <model name='grey_wall_6'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>140.0 30.0  1.4 0 0 -0.0</pose>
-    
+
+        <pose frame=''>140.0 30.0  1.4 0 0 -0.0</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 10.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 10.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -308,11 +307,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 10.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 10.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -326,33 +325,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_7'>
+
+    <model name='grey_wall_7'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>132.5 32.5  1.4 0 0 -0.785398163397</pose>
-    
+
+        <pose frame=''>132.5 32.5  1.4 0 0 -0.785398163397</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -360,11 +359,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -378,33 +377,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_8'>
+
+    <model name='grey_wall_8'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>130.0 42.5  1.4 0 0 1.57</pose>
-    
+
+        <pose frame=''>130.0 42.5  1.4 0 0 1.57</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -412,11 +411,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -430,33 +429,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_9'>
+
+    <model name='grey_wall_9'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>120.0 50.0  1.4 0 0 -0.0</pose>
-    
+
+        <pose frame=''>120.0 50.0  1.4 0 0 -0.0</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 20.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 20.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -464,11 +463,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 20.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 20.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -482,33 +481,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_10'>
+
+    <model name='grey_wall_10'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>110.0 42.5  1.4 0 0 1.57</pose>
-    
+
+        <pose frame=''>110.0 42.5  1.4 0 0 1.57</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -516,11 +515,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -534,33 +533,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_11'>
+
+    <model name='grey_wall_11'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>107.5 32.5  1.4 0 0 0.785398163397</pose>
-    
+
+        <pose frame=''>107.5 32.5  1.4 0 0 0.785398163397</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -568,11 +567,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -586,33 +585,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_12'>
+
+    <model name='grey_wall_12'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>77.5 30.0  1.4 0 0 -0.0</pose>
-    
+
+        <pose frame=''>77.5 30.0  1.4 0 0 -0.0</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 55.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 55.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -620,11 +619,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 55.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 55.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -638,33 +637,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_13'>
+
+    <model name='grey_wall_13'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>47.5 32.5  1.4 0 0 -0.785398163397</pose>
-    
+
+        <pose frame=''>47.5 32.5  1.4 0 0 -0.785398163397</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -672,11 +671,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -690,33 +689,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_14'>
+
+    <model name='grey_wall_14'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>45.0 42.5  1.4 0 0 1.57</pose>
-    
+
+        <pose frame=''>45.0 42.5  1.4 0 0 1.57</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -724,11 +723,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -742,33 +741,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_15'>
+
+    <model name='grey_wall_15'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>35.0 50.0  1.4 0 0 -0.0</pose>
-    
+
+        <pose frame=''>35.0 50.0  1.4 0 0 -0.0</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 20.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 20.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -776,11 +775,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 20.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 20.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -794,33 +793,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_16'>
+
+    <model name='grey_wall_16'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>25.0 42.5  1.4 0 0 1.57</pose>
-    
+
+        <pose frame=''>25.0 42.5  1.4 0 0 1.57</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -828,11 +827,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -846,33 +845,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_17'>
+
+    <model name='grey_wall_17'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>22.5 32.5  1.4 0 0 0.785398163397</pose>
-    
+
+        <pose frame=''>22.5 32.5  1.4 0 0 0.785398163397</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -880,11 +879,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 7.07106781187 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 7.07106781187 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -898,33 +897,33 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-     <model name='grey_wall_18'>
+
+    <model name='grey_wall_18'>
       <static>1</static>
       <link name='link'>
-      
-	  <pose frame=''>12.5 30.0  1.4 0 0 -0.0</pose>
-    
+
+        <pose frame=''>12.5 30.0  1.4 0 0 -0.0</pose>
+
         <collision name='collision'>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
           </geometry>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <ode/>
+              <ode />
             </contact>
-            <bounce/>
+            <bounce />
             <friction>
               <torsional>
-                <ode/>
+                <ode />
               </torsional>
-              <ode/>
+              <ode />
             </friction>
           </surface>
         </collision>
@@ -932,11 +931,11 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-            
-	     <size> 15.0 .2  2.8 </size>
 
-      	   </box>
-       </geometry>
+              <size> 15.0 .2  2.8 </size>
+
+            </box>
+          </geometry>
           <material>
             <script>
               <uri>model://grey_wall/materials/scripts</uri>
@@ -950,13 +949,10 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    
 
-            <plugin name="ActorPosesPlugin" filename="libActorPosesPlugin.so">
-        </plugin>
-    
-    
-      </world>
-    </sdf>
-    
-        
+
+    <plugin name="ActorPosesPlugin" filename="libActorPosesPlugin.so"></plugin>
+
+
+  </world>
+</sdf>

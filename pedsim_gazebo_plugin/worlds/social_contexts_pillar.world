@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 
 <!-- this file is auto generated using pedsim_gazebo_plugin pkg -->
 <sdf version="1.5">
@@ -1080,4 +1080,3 @@
 
   </world>
 </sdf>
-
