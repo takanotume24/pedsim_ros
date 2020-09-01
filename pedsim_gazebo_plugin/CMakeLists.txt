@@ -1,26 +1,31 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(pedsim_gazebo_plugin)
+add_definitions(-Wall -Wunused -std=c++11 -pipe -Wunused -Wextra)
+
 
 ## Compile as C++11, supported in ROS Kinetic and newer
  add_compile_options(-std=c++11)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
-  gazebo_ros
-  geometry_msgs
-  roscpp
-  rospy
-  gazebo_msgs
-  pedsim_msgs
-  pedsim_utils
+ set(PACKAGE_DEPS
+ gazebo_ros
+ geometry_msgs
+ roscpp
+ rospy
+ gazebo_msgs
+ pedsim_msgs
+ pedsim_utils
 )
 
+find_package(catkin REQUIRED COMPONENTS ${PACKAGE_DEPS})
 
+catkin_package(
+  CATKIN_DEPENDS ${PACKAGE_DEPS}
+)
 
-## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+include_directories(include)
+include_directories(${catkin_INCLUDE_DIRS})
+link_directories(${catkin_LIBRARY_DIRS})
+
  find_package(gazebo REQUIRED )
  # if(gazebo_VERSION_MAJOR GREATER 8)
  #  ign_import_target(UUID)
@@ -47,7 +52,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES gzb_vel_plugin
-  CATKIN_DEPENDS gazebo_ros roscpp  geometry_msgs pedsim_msgs pedsim_utils
+  CATKIN_DEPENDS ${PACKAGE_DEPS}
 #  DEPENDS system_lib
 )
 
@@ -65,7 +70,7 @@ include_directories(
 
 
 add_library(ActorPosesPlugin src/actor_poses_plugin.cpp)
-target_link_libraries(ActorPosesPlugin ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+target_link_libraries(ActorPosesPlugin ${catkin_LIBRARIES})
 
 
 #############

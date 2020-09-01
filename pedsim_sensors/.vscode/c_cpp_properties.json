@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/takuya/catkin_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/takuya/catkin_ws/src/navigation/amcl/include/**",
+                "/home/takuya/catkin_ws/src/navigation/base_local_planner/include/**",
+                "/home/takuya/catkin_ws/src/navigation/carrot_planner/include/**",
+                "/home/takuya/catkin_ws/src/navigation/clear_costmap_recovery/include/**",
+                "/home/takuya/catkin_ws/src/navigation/costmap_2d/include/**",
+                "/home/takuya/catkin_ws/src/navigation/dwa_local_planner/include/**",
+                "/home/takuya/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/**",
+                "/home/takuya/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros/include/**",
+                "/home/takuya/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include/**",
+                "/home/takuya/catkin_ws/src/navigation/global_planner/include/**",
+                "/home/takuya/catkin_ws/src/navigation/map_server/include/**",
+                "/home/takuya/catkin_ws/src/navigation/move_base/include/**",
+                "/home/takuya/catkin_ws/src/navigation/move_slow_and_clear/include/**",
+                "/home/takuya/catkin_ws/src/navigation/nav_core/include/**",
+                "/home/takuya/catkin_ws/src/navigation/navfn/include/**",
+                "/home/takuya/catkin_ws/src/pedestrian_layers/include/**",
+                "/home/takuya/catkin_ws/src/pedsim_ros/3rdparty/libpedsim/include/**",
+                "/home/takuya/catkin_ws/src/pedsim_ros/pedsim_sensors/include/**",
+                "/home/takuya/catkin_ws/src/pedsim_ros/pedsim_simulator/include/**",
+                "/home/takuya/catkin_ws/src/pedsim_ros/pedsim_utils/include/**",
+                "/home/takuya/catkin_ws/src/pedsim_ros/pedsim_visualizer/include/**",
+                "/home/takuya/catkin_ws/src/realsense2_description_pal_robotics_forked/realsense2_camera/include/**",
+                "/home/takuya/catkin_ws/src/realsense_gazebo_plugin/include/**",
+                "/home/takuya/catkin_ws/src/navigation/rotate_recovery/include/**",
+                "/home/takuya/catkin_ws/src/teleop_twist_joy/include/**",
+                "/home/takuya/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+                "/home/takuya/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+                "/home/takuya/catkin_ws/src/turtlebot3/turtlebot3_slam/include/**",
+                "/home/takuya/catkin_ws/src/navigation/voxel_grid/include/**",
+                "/home/takuya/catkin_ws/src/joystick_drivers/wiimote/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
