@@ -5005,10 +5005,11 @@
         <kinematic>0</kinematic>
       </link>
     </model>
+    
 
-
-    <plugin name="ActorPosesPlugin" filename="libActorPosesPlugin.so"></plugin>
-
-
-  </world>
-</sdf>
+            <plugin name="ActorPosesPlugin" filename="libActorPosesPlugin.so">
+        </plugin>
+    
+    
+      </world>
+    </sdf>
