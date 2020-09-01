@@ -1,5 +1,7 @@
 #!/usr/bin/env python
-import png, rospkg, numpy
+import png
+import rospkg
+import numpy
 import xml.etree.ElementTree as xml
 
 filename = "social_contexts.xml"
@@ -24,7 +26,7 @@ obstacles = []
 for obstacle in root.findall("obstacle"):
     xlimits = int(obstacle.get("x1")), int(obstacle.get("x2"))
     ylimits = int(obstacle.get("y1")), int(obstacle.get("y2"))
-    obstacle = ( min(xlimits), min(ylimits), max(xlimits), max(ylimits))
+    obstacle = (min(xlimits), min(ylimits), max(xlimits), max(ylimits))
     xmin = min(xmin, obstacle[0])
     ymin = min(ymin, obstacle[1])
     xmax = max(xmax, obstacle[2])
@@ -37,7 +39,7 @@ assert(ymin >= 0)
 width = xmax + 1
 height = ymax + 1
 
-grid = numpy.uint8( numpy.zeros( (height, width) ) )
+grid = numpy.uint8(numpy.zeros((height, width)))
 
 for obstacle in obstacles:
     for x in xrange(obstacle[0], obstacle[2] + 1):

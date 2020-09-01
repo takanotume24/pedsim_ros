@@ -29,6 +29,6 @@
   <exec_depend>pedsim_visualizer</exec_depend>
 
   <export>
-    <metapackage/>
+    <metapackage />
   </export>
 </package>

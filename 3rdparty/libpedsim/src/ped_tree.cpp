@@ -4,11 +4,12 @@
 //
 
 #include "ped_tree.h"
-#include "ped_agent.h"
-#include "ped_scene.h"
 
 #include <cassert>
 #include <cstddef>
+
+#include "ped_agent.h"
+#include "ped_scene.h"
 
 using namespace std;
 

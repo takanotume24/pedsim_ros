@@ -13,6 +13,7 @@
 #endif
 
 #include <cmath>
+
 #include "ped_angle.h"
 
 namespace Ped {
@@ -69,7 +70,7 @@ class LIBEXPORT Tvector {
   double y;
   double z;
 };
-}
+}  // namespace Ped
 
 bool operator==(const Ped::Tvector& vector1In, const Ped::Tvector& vector2In);
 bool operator!=(const Ped::Tvector& vector1In, const Ped::Tvector& vector2In);

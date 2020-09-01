@@ -13,6 +13,7 @@
 #endif
 
 #include <cstddef>
+
 #include "ped_vector.h"
 
 using namespace std;
@@ -66,8 +67,8 @@ class LIBEXPORT Twaypoint {
   Tvector position;                      ///< position of the waypoint
   WaypointType type;                     ///< type of the waypoint
   Behavior behavior = Behavior::SIMPLE;  ///< behavior of the waypoint
-  double radius;                          ///< radius of the waypoint
+  double radius;                         ///< radius of the waypoint
 };
-}
+}  // namespace Ped
 
 #endif
