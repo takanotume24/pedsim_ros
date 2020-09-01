@@ -68,16 +68,14 @@ Visualization Manager:
       Enabled: true
       Marker Topic: /pedsim/queues
       Name: Marker
-      Namespaces:
-        {}
+      Namespaces: {}
       Queue Size: 0
       Value: true
     - Class: rviz/Marker
       Enabled: true
       Marker Topic: /pedsim/attractions
       Name: Marker
-      Namespaces:
-        {}
+      Namespaces: {}
       Queue Size: 0
       Value: true
     - Alpha: 1

@@ -113,6 +113,6 @@ class LIBEXPORT Tangle {
  protected:
   double value;
 };
-}
+}  // namespace Ped
 
 #endif

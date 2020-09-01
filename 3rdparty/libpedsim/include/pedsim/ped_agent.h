@@ -12,10 +12,10 @@
 #define LIBEXPORT
 #endif
 
-#include "ped_vector.h"
-
 #include <deque>
 #include <set>
+
+#include "ped_vector.h"
 
 using namespace std;
 
@@ -119,5 +119,5 @@ class LIBEXPORT Tagent {
   Ped::Tvector obstacleforce;
   Ped::Tvector myforce;
 };
-}
+}  // namespace Ped
 #endif

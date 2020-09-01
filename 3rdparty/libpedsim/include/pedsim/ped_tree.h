@@ -71,6 +71,6 @@ class LIBEXPORT Ttree {
 
   Ped::Tscene* scene;
 };
-}
+}  // namespace Ped
 
 #endif

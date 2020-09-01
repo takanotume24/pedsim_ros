@@ -4,13 +4,14 @@
 //
 
 #include "ped_agent.h"
-#include "ped_obstacle.h"
-#include "ped_scene.h"
-#include "ped_waypoint.h"
 
 #include <algorithm>
 #include <cmath>
 #include <random>
+
+#include "ped_obstacle.h"
+#include "ped_scene.h"
+#include "ped_waypoint.h"
 
 using namespace std;
 
