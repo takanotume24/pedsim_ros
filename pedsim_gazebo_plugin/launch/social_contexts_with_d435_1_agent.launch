@@ -10,7 +10,7 @@
     </include>
 
     <include file="$(find pedsim_simulator)/launch/simulator.launch">
-        <arg name="scene_file" value="$(find pedsim_simulator)scenarios/social_contexts_pillar.xml" />
+        <arg name="scene_file" value="$(find pedsim_simulator)scenarios/social_contexts_pillar_1_agent.xml" />
         <arg name="robot_mode" value="0" />
         <arg name="with_robot" default="false" />
     </include>
@@ -23,7 +23,10 @@
         <remap from="image" to="/d435/depth/color/image_raw" />
     </node>
     
-    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description_with_d435)/urdf/waffle_pi/with_d435/lidar-1m.xacro" />
+    <!-- d435付きturtlebot waffle pi-->
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description_with_d435)/urdf/waffle_pi/with_d435/lidar-original.xacro" />
+    
+    <!-- gazeboへ3Dモデルをスポーンさせる -->
     <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_waffle_pi_with_d435 -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
 
     <!-- <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
