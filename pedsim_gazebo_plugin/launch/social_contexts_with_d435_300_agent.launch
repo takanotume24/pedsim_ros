@@ -10,7 +10,7 @@
     </include>
 
     <include file="$(find pedsim_simulator)/launch/simulator.launch">
-        <arg name="scene_file" value="$(find pedsim_simulator)scenarios/social_contexts_pillar_1_agent.xml" />
+        <arg name="scene_file" value="$(find pedsim_simulator)scenarios/social_contexts_pillar_300_agent.xml" />
         <arg name="robot_mode" value="0" />
         <arg name="with_robot" default="false" />
     </include>
