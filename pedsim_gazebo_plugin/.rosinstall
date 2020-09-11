@@ -1,0 +1,4 @@
+- git
+    local-name: turtlebot3_navigation
+    url: https://github.com/takanotume24/ros-creating-new-layer-turtlebot3-navigation
+    version: melodic-devel
