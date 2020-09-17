@@ -19,12 +19,12 @@
     <node pkg="pedsim_gazebo_plugin" type="spawn_pedsim_agents.py" name="spawn_pedsim_agents" output="screen"></node>
 
     <!-- realsense d435から取得されたデプス画像 -->
-    <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">
+    <!-- <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">
         <remap from="image" to="/d435/depth/color/image_raw" />
-    </node>
+    </node> -->
     
     <!-- d435付きturtlebot waffle pi-->
-    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description_with_d435)/urdf/waffle_pi/with_d435/lidar-1m.xacro" />
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description_with_d435)/urdf/waffle_pi/no_d435/lidar-1m.xacro" />
     
     <!-- gazeboへ3Dモデルをスポーンさせる -->
     <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_waffle_pi_with_d435 -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
