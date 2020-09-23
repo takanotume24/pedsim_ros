@@ -5,14 +5,17 @@
     <arg name="y_pos" default="10" />
     <arg name="z_pos" default="0" />
 
+    <node pkg="rosbag" type="play" name="rosbag_play" output="screen" required="true" 
+        args="/home/takuya/2020-09-17-19-52-03-歩行者1人ナビゲーション.bag"
+    />
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(find pedsim_gazebo_plugin)/worlds/social_contexts_pillar.world" />
     </include>
 
     <include file="$(find pedsim_simulator)/launch/simulator.launch">
         <arg name="scene_file" value="$(find pedsim_simulator)scenarios/social_contexts_pillar_1_agent.xml" />
-        <!-- <arg name="robot_mode" value="1" />
-        <arg name="with_robot" default="true" /> -->
+        <arg name="robot_mode" value="0" />
+        <arg name="with_robot" default="false" />
     </include>
 
     <!-- this node spawn pedsim actors to gazebo once, then the plugin updates their pose -->
@@ -24,7 +27,7 @@
     </node> -->
     
     <!-- d435付きturtlebot waffle pi-->
-    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description_with_d435)/urdf/waffle_pi/with_d435/lidar-1m.xacro" />
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description_with_d435)/urdf/waffle_pi/no_d435/lidar-1m.xacro" />
     
     <!-- gazeboへ3Dモデルをスポーンさせる -->
     <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_waffle_pi_with_d435 -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
