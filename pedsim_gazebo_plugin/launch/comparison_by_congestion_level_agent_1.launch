@@ -1,5 +1,5 @@
 <launch>
     <include file="$(find pedsim_gazebo_plugin)/launch/comparison_by_congestion_level.launch">
-        <arg name="agent_num" value="0"/>
+        <arg name="agent_num" value="1"/>
     </include>
 </launch>
