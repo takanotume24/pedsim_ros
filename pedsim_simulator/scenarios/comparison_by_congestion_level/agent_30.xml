@@ -33,7 +33,7 @@
     <waypoint id="pedestrian_goal" x="20" y="29" r="5" />
 
     <!--AgentClusters-->
-    <agent x="20" y="5" n="1" dx="0" dy="0" type="0">
+    <agent x="20" y="5" n="30" dx="3" dy="3" type="0">
         <addwaypoint id="pedestrian_start" />
         <addwaypoint id="pedestrian_goal" />
     </agent>
