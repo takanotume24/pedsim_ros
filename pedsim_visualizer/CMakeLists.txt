@@ -10,7 +10,9 @@ set(PACKAGE_DEPS
     rospy
     std_msgs
     visualization_msgs
-    dynamic_reconfigure)
+    dynamic_reconfigure
+    tf
+    )
 find_package(catkin REQUIRED COMPONENTS ${PACKAGE_DEPS})
 
 # ##############################################################################
