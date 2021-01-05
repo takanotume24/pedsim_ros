@@ -299,6 +299,8 @@ void Simulator::publishAgents() {
     state.twist.linear.x = a->getvx();
     state.twist.linear.y = a->getvy();
     state.twist.linear.z = a->getvz();
+    auto theta = std::atan2(a->getvy(), a->getvx());
+    state.pose.orientation = pedsim::angleToQuaternion(theta);
 
     AgentStateMachine::AgentState sc = a->getStateMachine()->getCurrentState();
     state.social_state = agentStateToActivity(sc);

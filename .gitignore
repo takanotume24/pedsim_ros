@@ -6,3 +6,5 @@ build
 \#*#
 .\#*
 
+pedsim_msgs/.vscode/c_cpp_properties.json
+pedsim_msgs/.vscode/settings.json
