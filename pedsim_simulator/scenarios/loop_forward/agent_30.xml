@@ -18,15 +18,15 @@
     <waypoint id="goal" x="25" y="27" r="2" />
 
     <!--AgentClusters-->
-    <agent x="1" y="1" n="30" dx="3" dy="3" type="3">
+    <agent x="1" y="1" n="30" dx="1" dy="1" type="1">
         <addwaypoint id="route_0" />
         <addwaypoint id="route_1" />
         <addwaypoint id="route_2" />
         <addwaypoint id="route_3" />
     </agent>
 
-    <agent x="2.5" y="2.5" n="1" dx="0" dy="0" type="2">
+    <!-- <agent x="2.5" y="2.5" n="1" dx="0" dy="0" type="2">
         <addwaypoint id="start" />
-    </agent>
+    </agent> -->
 
 </scenario>

@@ -218,7 +218,7 @@ void Simulator::updateRobotPositionFromTF() {
     // Get robot position via TF
     tf::StampedTransform tfTransform;
     try {
-      transform_listener_->lookupTransform("odom", "base_footprint",
+      transform_listener_->lookupTransform("map", "base_footprint",
                                            ros::Time(0), tfTransform);
     } catch (tf::TransformException& e) {
       ROS_WARN_STREAM_THROTTLE(
